@@ -1,0 +1,74 @@
+:root{
+    --text-color: hsl(227, 10%, 46%);
+    
+    --color-purple-900: #3f1a5b; 
+    --color-purple-700: #7723cf;
+    --color-purple-500: #af7ec3;
+    --color-purple-300: #db9ed8;
+    --color-purple-200: #d1abf4;
+
+    --gradiente: linear-gradient(90deg, var(--color-purple-900), var(--color-purple-700), var(--color-purple-500), var(--color-purple-300), var(--color-purple-200))
+}
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+
+main{
+    background: var(--gradiente);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container{
+    border-radius: 7px;
+    min-width: 350px;
+    background-color: rgba(222, 222, 222, 0.3);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.personal-infomation{
+    text-align: center;
+    padding: 30px;
+}
+
+.personal-infomation p{
+    margin-top: 20px;
+}
+
+.personal-infomation img{
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+}
+
+.social-media{
+    padding: 20px;
+    display: flex;
+    margin-top: 20px;
+    border-top: 0.2px solid var(--text-color);
+    padding-top: 20px;
+}
+
+.container{
+    text-align: center;
+    flex: 1;
+}
+
+.name,
+.container li:first-child{
+    font-weight: 700;
+}
+
+.hometown,
+.age,
+.container li:last-child{
+    color: var(--text-color)
+}
